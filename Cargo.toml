@@ -1,0 +1,13 @@
+[package]
+name = "Rust-OpenGL"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytemuck = "1.19.0"     # casting around plain datatypes
+gl33 = "0.2.1"          # OpenGL Bindings
+ultraviolet = "0.9.2"
+
+beryllium = "0.13.3"    # SLD2 wrapper, dynamic link, (need SLD2.dll in PATH), SDL = Simple DirectMedia Layer
+imagine = "0.5.1"       # png parser
+ogl33 = { version = "0.2.0", features = ["debug_error_checks"]}
