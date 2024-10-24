@@ -72,6 +72,8 @@ fn main(){
         glGenVertexArrays(1, &mut vao);
         assert_ne!(vao, 0);
 
+        glBindVertexArray(vao); // bind the array
+
         // setup vertex buffer object
         let mut vbo = 0;
         glGenBuffers(1, &mut vbo);
